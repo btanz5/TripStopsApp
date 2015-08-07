@@ -1,0 +1,77 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #E3E1EB;
+	font-family: Georgia, serif; 
+}
+.mainSection{
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 2%;
+}
+.loginSection, .signUpSection{
+	width: 72%;
+	padding: 2%;
+	margin: 2%;
+	border: 2px solid #F0D29B;
+	-webkit-box-shadow: 6px 6px 6px #B9B9B9;
+		    box-shadow: 6px 6px 6px #B9B9B9;	
+	-webkit-border-radius: 1%;
+		    border-radius: 1%;
+}
+.inputWrapper{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 2%;
+	background-color: #E1DDE7;
+	border: 2px solid #F0D29B;
+	-webkit-box-shadow: 6px 6px 6px #B9B9B9;
+		    box-shadow: 6px 6px 6px #B9B9B9;
+	-webkit-border-radius: 2%;
+		    border-radius: 2%;	
+}
+#logout{
+	margin-left: 500px;
+}
+li{
+	display: inline;
+}
+#map{
+	width: 80%;
+	height: 450px;
+	float: left;
+	border: 2px solid #F0D29B;
+	-webkit-box-shadow: 6px 6px 6px #B9B9B9;
+		    box-shadow: 6px 6px 6px #B9B9B9;	
+	-webkit-border-radius: 1%;
+		    border-radius: 1%;
+}
+.findStop{
+	margin-bottom: 1%;
+}
+.stopMessage, .nullMessage, .noTransportMessage{
+	color:#767B7B
+}
+
+#savedTrips {
+	width: 17%;
+	height: 450px;
+	float: right;
+	margin-top: 3%;
+	color:#767B7B;
+	display: inline;
+	background-color: #E1DDE7;
+	border: 2px solid #F0D29B;
+	-webkit-box-shadow: 6px 6px 6px #B9B9B9;
+		    box-shadow: 6px 6px 6px #B9B9B9;	
+	-webkit-border-radius: 1%;
+ 			border-radius: 1%;
+}
+
+footer{
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 1%;
+	color:#767B7B;
+	clear: both;
+}

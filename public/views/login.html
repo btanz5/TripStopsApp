@@ -1,0 +1,13 @@
+<section ng-controller="LoginController" class="loginSection">
+	<p>Please login or sign up</p>
+	<p>If you'd like to not save your data you can click "Continue as guest"</p>
+	<form name="form" ng-submit="login()">
+		<input type="text" size="30" placeholder="Input your username" name="username" ng-model="username" /><br>
+		<input type="password" size="30" placeholder="Input your password" name="password" ng-model="password" /><br>
+		<button>Login</button><br>
+	</form>
+
+	<a href="#/signup">Click here to sign up</a><br>
+	<a href="#/map">Continue as guest</a>
+
+</section>

@@ -1,0 +1,36 @@
+<section ng-controller="MapController">
+	<div class="inputWrapper">
+		<button ng-click="logout()">Logout</button>
+		<form name="destinationForm" novalidate>
+
+			<input type="text" class="destination" size="30" placeholder="Input your destination..." name="destinationField" ng-model="destinationVal" autofocus ng-required="true"/>
+
+			
+			<ul>
+				<span class="noTransportMessage" ng-show="destinationForm.transportOpt.$invalid">Please select a method of transportation</span><br>
+
+				<li><input type="radio" name="transportOpt" value="DRIVING" ng-model="transport" ng-required="!transport">Driving</li>
+				<li><input type="radio" name="transportOpt" value="WALKING" ng-model="transport" ng-required="!transport">Walking</li>
+				<li><input type="radio" name="transportOpt" value="BICYCLING" ng-model="transport" ng-required="!transport">Biking</li>
+				<li><input type="radio" name="transportOpt" value="TRANSIT" ng-model="transport" ng-required="!transport">Public Transportation</li>
+			</ul>
+
+			<button ng-disabled="destinationForm.destinationVal.$invalid" ng-click="calcRoute()">Show Route</button>
+
+			<span class="nullMessage" ng-show="destinationForm.destinationField.$invalid && destinationForm.destinationField.$touched">Please enter a valid destination</span><br><br>
+
+			<input type="text" class="findStopVal" size="30" placeholder="Input a stop..." name="stopField" ng-model="stopVal" ng-required="true"/>
+			<button class="findStop" ng-disabled="destinationForm.stopVal.$invalid" ng-click="addStops()">Find Stop</button>
+			<span class="stopMessage" ng-show="destinationForm.stopField.$valid && destinationForm.stopField.$touched">Double click on a marker to save it in the database</span><br>
+			
+			<button ng-click="showTraffic()">Show Traffic</button>
+			<button ng-click="clearMap()">Clear Map</button>
+
+		</form>
+
+		<aside id="savedTrips">~~Saved Data Will Be Here~~This will be hidden if the user logins in as a "guest"</aside>
+
+	</div>
+	
+	
+</section>

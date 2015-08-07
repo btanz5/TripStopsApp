@@ -1,0 +1,27 @@
+{
+  "name": "trip_stops_app",
+  "version": "1.0.0",
+  "description": "This application allows the user to enter a beginning and end destination. They then will be able to search stops (restaurants, gas, landmarks that google has store in their database, etc.) along the way. They will then be able to save certain stops, to eventually be able to view the entire trip with their saved stops.",
+  "main": "appServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btanz5/TripStopsApp.git"
+  },
+  "author": "benTansey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/btanz5/TripStopsApp/issues"
+  },
+  "homepage": "https://github.com/btanz5/TripStopsApp#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1",
+    "mongoose": "^4.1.0",
+    "passport": "^0.2.2",
+    "passport-http": "^0.2.2"
+  }
+}
